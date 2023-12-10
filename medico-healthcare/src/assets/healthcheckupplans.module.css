@@ -1,0 +1,170 @@
+.content {
+  height: 977px;
+  padding: 00px 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Adjust as needed */
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #091e29;
+  text-align: center;
+
+  font-family: Satoshi;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.listTitle {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+
+  color: #091e29;
+
+  font-family: Satoshi;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.description,
+.listDescription {
+  color: #091e29;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.buttonContainer {
+  margin-top: 40px;
+  display: flex;
+  padding: 40px;
+
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+  list-style-type: none;
+  color: #091e29;
+
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.list li {
+  margin-left: -40px;
+}
+
+.buttons {
+  background-color: rgb(57, 190, 190);
+  border: none;
+  border-radius: 10px;
+  color: black;
+  margin-left: 20px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.appointmentButton {
+  background-color: rgb(58, 175, 175);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin-top: 30px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo {
+  background-color: teal;
+  padding: 10px;
+  border-radius: 50%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+.buttons:hover,
+.appointmentButton:hover {
+  background-color: teal;
+  color: white;
+}
+
+.checkupList {
+  width: 50%;
+  padding: 20px;
+  padding-left: 0px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 36px;
+}
+.blank {
+  position: absolute;
+  background-color: #0056b3;
+  width: 362px;
+  height: 111px;
+
+  bottom: 4px;
+  left: 140px;
+  border-radius: 20px;
+  background: #ffc567;
+}
+.womanWithLaptop {
+  width: 60%;
+  position: relative;
+}
+
+.womanWithLaptop img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}

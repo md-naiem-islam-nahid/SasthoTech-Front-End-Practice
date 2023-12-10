@@ -1,0 +1,115 @@
+/* services.module.css */
+.content {
+  height: 900px;
+  padding: 100px 160px;
+  display: flex;
+  
+}
+
+.container {
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.smallHeading {
+  color: #09a4ad;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bigHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 40px;
+ 
+}
+
+.bigHead h1 {
+  color: #000;
+  width: 550px;
+  font-family: Satoshi;
+  font-size: 46px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.bigHead button {
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #00a0aa;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.serviceItems {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px 20px;
+  row-gap: 10px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+  column-gap: 30px;
+}
+
+.item {
+  background-color: #f1efef;
+  padding: 20px;
+  border-radius: 10px;
+  width: 387px;
+  padding-left: 100px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.item img{
+  position: absolute;
+  width: 56px;
+
+top: 60px;
+left: 20px;
+}
+
+.item h2 {
+  color: #000;
+
+  font-family: Satoshi;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.item p {
+    color: #091E29;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 80%;
+}
+
+.arrowright{
+  position: absolute;
+  font-size: 25px;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px;
+  background-color: white;
+}
