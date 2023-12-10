@@ -3,11 +3,9 @@
   height: 900px;
   padding: 100px 160px;
   display: flex;
-  
 }
 
 .container {
-
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -30,7 +28,6 @@
   align-items: flex-end;
   width: 100%;
   margin-bottom: 40px;
- 
 }
 
 .bigHead h1 {
@@ -75,14 +72,19 @@
   padding-left: 100px;
   padding-right: 30px;
   position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
-.item img{
+.item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
   position: absolute;
   width: 56px;
 
-top: 60px;
-left: 20px;
+  top: 60px;
+  left: 20px;
 }
 
 .item h2 {
@@ -96,16 +98,16 @@ left: 20px;
 }
 
 .item p {
-    color: #091E29;
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 80%;
+  color: #091e29;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 80%;
 }
 
-.arrowright{
+.arrowright {
   position: absolute;
   font-size: 25px;
   bottom: 0px;
