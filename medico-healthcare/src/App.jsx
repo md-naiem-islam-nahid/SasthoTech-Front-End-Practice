@@ -1,34 +1,32 @@
-import TopBar from "./components/TopBar"
-import NavBar from "./components/NavBar"
-import Welcome from "./components/Welcome"
-import Treatment from "./components/Treatment"
-import Services from "./components/Services"
-import WhyChooseUs from "./components/WhyChooseUs"
-import HelathCheckupPlans from "./components/HelathCheckupPlans"
-import Testimonial from "./components/Testimonial"
-import ContactUs from "./components/ContactUs"
-import Footer from "./components/Footer"
-
-import st from './App.module.css'
+import { Container } from "react-bootstrap";
+import TopBar from "./components/TopBar";
+import NavBar from "./components/NavBar";
+import Welcome from "./components/Welcome";
+import Treatment from "./components/Treatment";
+import Services from "./components/Services";
+import WhyChooseUs from "./components/WhyChooseUs";
+import HealthCheckupPlans from "./components/HealthCheckupPlans";
+import Testimonial from "./components/Testimonial";
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 function App() {
-
-
-  return ( 
-    <div className={st.container}>
+  return (
+    <Container
+      style={{ maxWidth: "1440px", margin: "auto", backgroundColor: "#F8F9FE", fontFamily: 'Satoshi', }}
+    >
       <TopBar />
       <NavBar />
       <Welcome />
       <Treatment />
       <Services />
       <WhyChooseUs />
-      < HelathCheckupPlans />
+      <HealthCheckupPlans />
       <Testimonial />
       <ContactUs />
-
       <Footer />
-    </div>
-  )
+    </Container>
+  );
 }
 
-export default App
+export default App;

@@ -1,81 +1,163 @@
-// Footer.jsx
-
-import React from 'react';
-import styles from '../assets/footer.module.css';
-import logo from '../imgs/medico.png';
-import { SocialIcon } from 'react-social-icons';
-import { FaWhatsapp } from 'react-icons/fa';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-
-
-
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { SocialIcon } from "react-social-icons";
+import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import logo from "../imgs/medico.png";
 
 const Footer = () => {
   return (
-    <div className={styles.content}>
-      <div className={styles.container}>
-        <div className={styles.footerTop}>
-          <div className={styles.col1}>
-            <div className={styles.medico}>
-              <img src={logo} alt="Medico Logo" />
-              <p>Medico</p>
+    <Container fluid style={{ height: "437px", backgroundColor: "#026cdd" }}>
+      <Container
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          background: "#18a0a9",
+          padding: "100px 169px 50px 170px",
+          fontFamily: 'Satoshi',
+        }}
+      >
+        <Row
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            height: "221px",
+            padding: "20px",
+            columnGap: "75px",
+          }}
+        >
+          <Col
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "flex-start",
+                
+              }}
+            >
+              <img
+                src={logo}
+                alt="Medico Logo"
+                style={{ width: "37px", height: "37px", marginRight: "10px" }}
+              />
+              <p style={{ color: "#fff", fontSize: "24px", fontWeight: "700" }}>
+                Medico
+              </p>
             </div>
-            <button className={styles.appointmentButton}>
-       
-<ArrowIco/>  Take an Appointment
-            </button>
-            <button className={styles.whatsappButton}>
+            <Button
+              variant="outline-light"
+              style={{
+                marginTop: "10px",
+                width: "285px",
+                height: "56px",
+                fontSize: "20px",
+                fontWeight: "700",
+                fontFamily: 'Satoshi',
+                borderRadius:'10px',
+              }}
+            >
+              <FaArrowRight style={{ paddingRight: "20px",  }} /> Take an
+              Appointment
+            </Button>
+            <Button
+              variant="outline-light"
+              style={{
+                marginTop: "10px",
+                width: "285px",
+                height: "56px",
+                fontSize: "20px",
+                fontWeight: "700",
+                fontFamily: 'Satoshi',
+                borderRadius:'10px',
+              }}
+            >
               <FaWhatsapp /> Connect on Whatsapp
-            </button>
-          </div>
-
-          <div className={styles.footerSection}>
-            <FooterSection title="SERVICES" items={['Pathology', 'Ambulance', 'Radiology', 'Pharmacy']} />
-          </div>
-
-          <div className={styles.footerSection}>
-            <FooterSection title="HEALTH CHECKUP" items={['Woman Health', 'Cancer Screening', 'Cardiac Health', 'MRI Checkup']} />
-          </div>
-
-          <div className={styles.footerSection}>
-            <FooterSection title="DEPARTMENTS" items={['General', 'Dermatology', 'Cardiology', 'Cancer']} />
-          </div>
-
-          <div className={styles.footerSection}>
-            <FooterSection title="QUICK LINKS" items={['License', 'Changelog']} />
-          </div>
-        </div>
-
-        <div className={styles.social}>
-          <ul>
-            <li><SocialIcon url="https://www.facebook.com" fgColor="#FFFFFF" style={{ height: 35, width: 35 }} /></li>
-            <li><SocialIcon url="https://www.twitter.com" fgColor="#FFFFFF" style={{ height: 35, width: 35 }} /></li>
-            <li><SocialIcon url="https://www.pinterest.com" fgColor="#FFFFFF" style={{ height: 35, width: 35 }} /></li>
-            <li><SocialIcon url="https://www.instagram.com" fgColor="#FFFFFF" style={{ height: 35, width: 35 }} /></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+            </Button>
+          </Col>
+          <FooterSection
+            title="SERVICES"
+            items={["Pathology", "Ambulance", "Radiology", "Pharmacy"]}
+          />
+          <FooterSection
+            title="HEALTH CHECKUP"
+            items={[
+              "Woman Health",
+              "Cancer Screening",
+              "Cardiac Health",
+              "MRI Checkup",
+            ]}
+          />
+          <FooterSection
+            title="DEPARTMENTS"
+            items={["General", "Dermatology", "Cardiology", "Cancer"]}
+          />
+          <FooterSection title="QUICK LINKS" items={["License", "Changelog"]} />
+        </Row>
+        <Row
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            padding: "0",
+            listStyleType: "none",
+          }}
+        >
+          <SocialIcon
+            url="https://www.facebook.com"
+            fgColor="#FFFFFF"
+            style={{ height: "35px", width: "35px", marginRight: "17px" }}
+          />
+          <SocialIcon
+            url="https://www.twitter.com"
+            fgColor="#FFFFFF"
+            style={{ height: "35px", width: "35px", marginRight: "17px" }}
+          />
+          <SocialIcon
+            url="https://www.pinterest.com"
+            fgColor="#FFFFFF"
+            style={{ height: "35px", width: "35px", marginRight: "17px" }}
+          />
+          <SocialIcon
+            url="https://www.instagram.com"
+            fgColor="#FFFFFF"
+            style={{ height: "35px", width: "35px", marginRight: "17px" }}
+          />
+        </Row>
+      </Container>
+    </Container>
   );
 };
 
 const FooterSection = ({ title, items }) => (
-  <div className={styles.footerSection}>
+  <Col
+    style={{
+      color: "#fff",
+      textAlign: "start",
+      fontSize: "18px",
+      fontWeight: "500",
+    }}
+  >
     <p>{title}</p>
-    <ul>
+    <ul style={{ listStyleType: "none", padding: "0" }}>
       {items.map((item, index) => (
-        <li key={index}>{item}</li>
+        <li
+          key={index}
+          style={{
+            paddingTop: "10px",
+            color: "#fff",
+            fontSize: "18px",
+            fontWeight: "500",
+          }}
+        >
+          {item}
+        </li>
       ))}
     </ul>
-  </div>
+  </Col>
 );
-
-
-const ArrowIco = () => (
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none">
-  <path d="M13 1.00027C13.0001 0.810648 12.9462 0.624917 12.8448 0.464742C12.7434 0.304568 12.5985 0.176552 12.4271 0.0956298C12.2557 0.014707 12.0649 -0.0157876 11.8768 0.00770329C11.6888 0.0311942 11.5113 0.107702 11.365 0.228303L0.36583 9.28994C-0.357721 9.88592 0.0640173 11.0619 1.00144 11.0619H6.58997C6.80495 11.0619 7.01741 11.1081 7.21295 11.1975C7.40849 11.2868 7.58253 11.4173 7.72327 11.5799L11.2451 15.6527C11.8507 16.3527 13 15.9237 13 14.9977V1.00027ZM1.00144 10.0619L12.0006 1.00027V14.9977L8.4788 10.9259C8.2443 10.6548 7.95426 10.4373 7.62836 10.2882C7.30245 10.1391 6.94832 10.062 6.58997 10.0619H1.00144Z" fill="white"/>
-</svg>
-);
-
 
 export default Footer;
