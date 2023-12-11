@@ -3,7 +3,11 @@ import { Container, Row, Col, Nav, Button } from "react-bootstrap";
 import { FiPhoneCall } from "react-icons/fi";
 import MedicoLogo from "../imgs/medico.png";
 
+<<<<<<< HEAD
+const NavBar = ({color}) => {
+=======
 const NavBar = () => {
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
 
  
   const [hoverIndex, setHoverIndex] = useState(-1);
@@ -46,7 +50,11 @@ const NavBar = () => {
               <Nav.Item
                 key={item}
                 style={{
+<<<<<<< HEAD
+                  color: hoverIndex === index ? color : "#000",
+=======
                   color: hoverIndex === index ? "#00a0aa" : "#000",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
                   fontSize: "16px",
                   fontWeight: "500",
                   padding: "0 12.5px",
@@ -75,7 +83,11 @@ const NavBar = () => {
           <Button
             style={{
               borderRadius: "10px",
+<<<<<<< HEAD
+              background: color,
+=======
               background: "#00a0aa",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               border: "none",
               padding: "15px 20px",
               color: "#FFF",

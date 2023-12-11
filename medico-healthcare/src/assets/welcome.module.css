@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+
+@media only screen and (max-width: 767px) {
+  .welcome-row {
+    flex-direction: column; /* Change the order of columns for responsiveness */
+  }
+  
+  /* Add any additional styles needed for small screens */
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .welcome-row {
+    flex-direction: column; /* Change the order of columns for responsiveness */
+  }
+}
+
+=======
 .content {
   height: 677px;
   margin-top: 19px;
@@ -95,3 +113,4 @@
   font-weight: 700;
   cursor: pointer;
 }
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905

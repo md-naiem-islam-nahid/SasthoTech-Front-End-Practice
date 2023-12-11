@@ -29,7 +29,11 @@ Medico Website is a React application developed to demonstrate proficiency in fr
 
 - React
 - Bootstrap
+<<<<<<< HEAD
+- (Add any additional libraries or tools you used)
+=======
 - CSS
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
 
 ## Installation
 

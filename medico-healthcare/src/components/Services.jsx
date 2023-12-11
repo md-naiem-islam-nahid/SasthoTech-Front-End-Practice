@@ -6,7 +6,11 @@ import ser2 from "../imgs/service2.png";
 import ser3 from "../imgs/service3.png";
 import ser4 from "../imgs/service4.png";
 
+<<<<<<< HEAD
+const Services = ({color}) => {
+=======
 const Services = () => {
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
   return (
     <Container
       fluid
@@ -22,7 +26,11 @@ const Services = () => {
       >
         <div
           style={{
+<<<<<<< HEAD
+            color: color,
+=======
             color: "#09a4ad",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
             textAlign: "center",
             fontSize: "16px",
             fontWeight: "700",
@@ -54,7 +62,11 @@ const Services = () => {
             style={{
               padding: "15px 20px",
               fontSize: "16px",
+<<<<<<< HEAD
+              backgroundColor: color,
+=======
               backgroundColor: "#00a0aa",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               color: "white",
               border: "none",
               borderRadius: "10px",

@@ -4,7 +4,13 @@ import { MdLocationOn } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 
+<<<<<<< HEAD
+export default function TopBar({color}) {
+
+ 
+=======
 export default function TopBar() {
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
   const iconStyle = { color: "#F8F9FE", fontSize: "18px", fontWeight: "500" };
   const whatsappStyle = {
     color: "#F8F9FE",
@@ -17,7 +23,11 @@ export default function TopBar() {
     <Container
       fluid
       style={{
+<<<<<<< HEAD
+        backgroundColor: color,
+=======
         backgroundColor: "teal",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
         height: "52px",
         display: "flex",
         alignItems: "center",

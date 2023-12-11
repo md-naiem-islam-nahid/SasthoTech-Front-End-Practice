@@ -4,7 +4,11 @@ import { ArrowIcon } from "./ArrowIcon";
 import logo from "../imgs/medico.png";
 import womanWithLaptop from "../imgs/styleimg1.png";
 
+<<<<<<< HEAD
+const HealthCheckupPlans = ({color}) => {
+=======
 const HealthCheckupPlans = () => {
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
   return (
     <Container
       fluid
@@ -47,7 +51,11 @@ const HealthCheckupPlans = () => {
           >
             <Button
               style={{
+<<<<<<< HEAD
+                backgroundColor: color,
+=======
                 backgroundColor: "rgb(57, 190, 190)",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
                 border: "none",
                 borderRadius: "10px",
                 color: "black",
@@ -61,7 +69,11 @@ const HealthCheckupPlans = () => {
             </Button>
             <Button
               style={{
+<<<<<<< HEAD
+                backgroundColor: color,
+=======
                 backgroundColor: "rgb(57, 190, 190)",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
                 border: "none",
                 borderRadius: "10px",
                 color: "black",
@@ -75,7 +87,11 @@ const HealthCheckupPlans = () => {
             </Button>
             <Button
               style={{
+<<<<<<< HEAD
+                backgroundColor: color,
+=======
                 backgroundColor: "rgb(57, 190, 190)",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
                 border: "none",
                 borderRadius: "10px",
                 color: "black",
@@ -109,7 +125,11 @@ const HealthCheckupPlans = () => {
               src={logo}
               alt="Medico Logo"
               style={{
+<<<<<<< HEAD
+                backgroundColor: color,
+=======
                 backgroundColor: "teal",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
                 padding: "10px",
                 borderRadius: "50%",
                 width: "36px",
@@ -141,6 +161,15 @@ const HealthCheckupPlans = () => {
               }}
             >
               <li>
+<<<<<<< HEAD
+                <ArrowIcon color={color}/> Complete Blood Count with ESR
+              </li>
+              <li>
+                <ArrowIcon color={color}/> Lipid Profile, Live Profile, kidney Profile
+              </li>
+              <li>
+                <ArrowIcon color={color}/> USG Abdomen with Pelvis, Mammography
+=======
                 <ArrowIcon /> Complete Blood Count with ESR
               </li>
               <li>
@@ -148,11 +177,16 @@ const HealthCheckupPlans = () => {
               </li>
               <li>
                 <ArrowIcon /> USG Abdomen with Pelvis, Mammography
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               </li>
             </ul>
             <Button
               style={{
+<<<<<<< HEAD
+                backgroundColor: color,
+=======
                 backgroundColor: "rgb(58, 175, 175)",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
                 border: "none",
                 borderRadius: "10px",
                 color: "white",
