@@ -1,0 +1,89 @@
+.content {
+  margin-top: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 152px;
+}
+
+.container {
+  border-radius: 7px;
+  height: 55px;
+  width: 1136px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 28px;
+
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.logo {
+  display: flex; /* Make .logo a flex container */
+  align-items: center; /* Align the image with the text */
+  gap: 10px; /* Add space between the image and the text */
+}
+
+.logo img {
+  width: 23px;
+  height: 23px;
+}
+
+.logo span {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navitems ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 25px; /* Use gap instead of column-gap for consistency */
+}
+
+.navitems li {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 500;
+}
+.navitems li,
+.logo,
+.number {
+  transition: transform 0.3s ease;
+}
+
+.navitems li:hover,
+.logo:hover,
+.number:hover,
+.logo span:hover {
+  color: #00a0aa;
+  text-shadow: 2px 2px 4px #463737;
+  transform: translateY(-5px);
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.number {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.appointment button {
+  border-radius: 10px;
+  background: #00a0aa;
+  border: none;
+  padding: 15px 20px;
+  color: #fff;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 700;
+}

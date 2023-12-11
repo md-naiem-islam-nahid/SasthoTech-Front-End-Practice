@@ -1,0 +1,127 @@
+/* ContactUs.module.css */
+.content {
+  height: 750px;
+  padding: 100px 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+
+  width: 100%;
+  column-gap: 65px;
+}
+
+.appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+
+  width: 45%;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5 {
+  font-family: "Satoshi", sans-serif;
+}
+
+.text1 {
+  color: #09a4ad;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text2 {
+  padding-top: 20px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text3 {
+  padding-top: 40px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text4,
+.text5 {
+  align-items: center;
+  padding-top: 30px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 10px; 
+}
+
+.icon1 {
+  
+  font-size: 1.2em;
+  transform: rotate(90deg); 
+}
+.icon2{
+  font-size: 1.2em;
+}
+
+.contactform {
+  flex: 1;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: -1px 1px 11px -1px rgba(.1, 0.1, 0.1, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+textarea {
+ 
+  width: 405px;
+  height: 129px;
+  padding: 17px 19px;
+  gap: 10px;
+  resize: none;
+}
+
+button {
+  background-color: #09a4ad; 
+  color: white;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+button:hover {
+  background-color: #087f8c; 
+}
