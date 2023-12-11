@@ -2,7 +2,11 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
+<<<<<<< HEAD
 const ContactUs = ({color}) => {
+=======
+const ContactUs = () => {
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
   return (
     <Container
       fluid
@@ -29,7 +33,11 @@ const ContactUs = ({color}) => {
         >
           <div
             style={{
+<<<<<<< HEAD
               color: color,
+=======
+              color: "#09a4ad",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               textAlign: "center",
               fontSize: "12px",
               fontWeight: "700",
@@ -178,7 +186,11 @@ const ContactUs = ({color}) => {
               type="submit"
               style={{
                 
+<<<<<<< HEAD
                 backgroundColor: color,
+=======
+                backgroundColor: "#09a4ad",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
                 color: "white",
                 padding: "15px 15px",
                 width: '100%',

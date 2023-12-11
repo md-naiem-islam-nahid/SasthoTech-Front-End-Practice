@@ -4,7 +4,11 @@ import img1 from "../imgs/img1.png";
 import img2 from "../imgs/img2.png";
 import img3 from "../imgs/img3.png";
 
+<<<<<<< HEAD
 const Treatment = ({color}) => {
+=======
+const Treatment = () => {
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
   const cardStyle = {
     width: "300px",
     marginBottom: "10px",
@@ -18,7 +22,11 @@ const Treatment = ({color}) => {
 
   const bannerStyle = {
     position: "absolute",
+<<<<<<< HEAD
     backgroundColor: color,
+=======
+    backgroundColor: "teal",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
     color: "white",
     padding: "20px 10px",
     width: "192px",

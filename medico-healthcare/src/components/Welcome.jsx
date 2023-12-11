@@ -3,15 +3,25 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import doctorImage from "../imgs/doctor.png";
 import patientImage from "../imgs/patient.png";
 
+<<<<<<< HEAD
 const Welcome = ({color}) => {
   return (
     <Container  style={{ height: "677px", marginTop: "19px" }}>
       <Row 
+=======
+const Welcome = () => {
+  return (
+    <Container fluid style={{ height: "677px", marginTop: "19px" }}>
+      <Row
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
         style={{
           padding: "0",
           display: "flex",
           justifyContent: "space-around",
+<<<<<<< HEAD
           flexWrap: 'wrap',
+=======
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
         }}
       >
         <Col
@@ -93,7 +103,11 @@ const Welcome = ({color}) => {
         >
           <h1
             style={{
+<<<<<<< HEAD
               color: color,
+=======
+              color: "#00a0aa",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               textAlign: "left",
               fontSize: "20px",
               fontWeight: "700",
@@ -119,7 +133,11 @@ const Welcome = ({color}) => {
               marginTop: "-20px",
               padding: "15px 20px",
               borderRadius: "10px",
+<<<<<<< HEAD
               background: color,
+=======
+              background: "#00a0aa",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               color: "#fff",
               fontSize: "20px",
               fontWeight: "700",

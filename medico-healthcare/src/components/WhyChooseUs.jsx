@@ -3,7 +3,11 @@ import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import img from "../imgs/styleimg.png";
 import { ArrowIcon } from "./ArrowIcon"; // Assuming ArrowIcon is a custom component
 
+<<<<<<< HEAD
 const WhyChooseUs = ({color}) => {
+=======
+const WhyChooseUs = () => {
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
   return (
     <Container
       fluid
@@ -84,7 +88,11 @@ const WhyChooseUs = ({color}) => {
                   padding: "10px",
                 }}
               >
+<<<<<<< HEAD
                 <ArrowIcon color={color}/> Safety First Quality Must
+=======
+                <ArrowIcon /> Safety First Quality Must
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               </li>
               <li
                style={{
@@ -93,27 +101,47 @@ const WhyChooseUs = ({color}) => {
               >
 
 
+<<<<<<< HEAD
                 <ArrowIcon color={color}/> Patient-Centric Approach
+=======
+                <ArrowIcon /> Patient-Centric Approach
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               </li >
               <li  style={{
                   padding: "10px",
                 }}>
+<<<<<<< HEAD
                 <ArrowIcon color={color}/> Focused Leadership
+=======
+                <ArrowIcon /> Focused Leadership
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               </li>
               <li  style={{
                   padding: "10px",
                 }}>
+<<<<<<< HEAD
                 <ArrowIcon color={color}/> Cutting-Edge Technology
+=======
+                <ArrowIcon /> Cutting-Edge Technology
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               </li>
               <li  style={{
                   padding: "10px",
                 }}>
+<<<<<<< HEAD
                 <ArrowIcon color={color}/> Transparent Pricing
+=======
+                <ArrowIcon /> Transparent Pricing
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               </li >
               <li  style={{
                   padding: "10px",
                 }}>
+<<<<<<< HEAD
                 <ArrowIcon color={color}/> Coordinate Care
+=======
+                <ArrowIcon /> Coordinate Care
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               </li>
             </ul>
           </Col>
@@ -157,7 +185,11 @@ const WhyChooseUs = ({color}) => {
             style={{
               padding: "15px 20px",
               fontSize: "20px",
+<<<<<<< HEAD
               backgroundColor: color,
+=======
+              backgroundColor: "#00a0aa",
+>>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
               color: "white",
               border: "none",
               borderRadius: "5px",
