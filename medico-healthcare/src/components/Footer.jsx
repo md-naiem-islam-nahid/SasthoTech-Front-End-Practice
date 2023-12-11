@@ -1,25 +1,17 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { SocialIcon } from "react-social-icons";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import { SocialIcon } from "react-social-icons";
 import logo from "../imgs/medico.png";
 
-<<<<<<< HEAD
 const Footer = ({color}) => {
-=======
-const Footer = () => {
->>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
   return (
     <Container fluid style={{ height: "437px", backgroundColor: "#026cdd" }}>
       <Container
         style={{
           display: "flex",
           flexDirection: "column",
-<<<<<<< HEAD
           background: color,
-=======
-          background: "#18a0a9",
->>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
           padding: "100px 169px 50px 170px",
           fontFamily: 'Satoshi',
         }}
@@ -147,10 +139,7 @@ const FooterSection = ({ title, items }) => (
       textAlign: "start",
       fontSize: "18px",
       fontWeight: "500",
-<<<<<<< HEAD
       fontFamily:"Satoshi",
-=======
->>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
     }}
   >
     <p>{title}</p>
@@ -161,11 +150,7 @@ const FooterSection = ({ title, items }) => (
           style={{
             paddingTop: "10px",
             color: "#fff",
-<<<<<<< HEAD
             fontSize: "15px",
-=======
-            fontSize: "18px",
->>>>>>> 60beb26e1529c449fab26b0fd3842cd6cfab2905
             fontWeight: "500",
           }}
         >
