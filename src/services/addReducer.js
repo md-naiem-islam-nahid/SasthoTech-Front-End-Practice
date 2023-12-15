@@ -30,11 +30,10 @@ const tasksSlice = createSlice({
     },
 
     editTask: (state, action) => {
-      const { newTask } = action.payload;
-      const taskIndex = state.tasks.findIndex((task) => task.id === newTask.id);
-      if (taskIndex >= 0) {
-        state.tasks[taskIndex] = newTask;
-      }
+      const { id, title, note } = action.payload;
+      
+        state.tasks[id-1] = {id: id, title:title, note:note};
+      
     },
 
     deleteTask: (state, action) => {

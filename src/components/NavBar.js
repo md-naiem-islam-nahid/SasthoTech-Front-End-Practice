@@ -1,34 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import styles from '../styles/navbar.module.css'; // Import the CSS module
 
 const NavBar = () => {
-  const navStyle = {
-    backgroundColor: '#f3f3f3',
-  };
-
-  const linkStyle = {
-    textDecoration: 'none',
-    color: 'black',
-  };
-
   return (
-    <Navbar expand="sm" style={navStyle} variant="light">
-      <Navbar.Brand>
-        <Link to="/" style={linkStyle}>Home</Link>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link>
-            <Link to="/add-task" style={linkStyle}>Add Task</Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/all-tasks" style={linkStyle}>All Tasks</Link>
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+    <Navbar expand="sm" className={styles.navbar}>
+      <Container className="justify-content-center" style={{ maxWidth: '600px' }}>
+        <Navbar.Brand>
+          <LinkContainer to="/">
+            <Nav.Link className={styles.navLink}>Home</Nav.Link>
+          </LinkContainer>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <LinkContainer to="/add-task">
+              <Nav.Link className={styles.navLink}>Add Task</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/all-tasks">
+              <Nav.Link className={styles.navLink}>All Tasks</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };

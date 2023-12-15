@@ -1,0 +1,16 @@
+/* navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between  !important; 
+  background-color: #343a40;
+}
+
+.navLink {
+  color: #fff !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLink:hover {
+  color: #ffc107 !important;
+}

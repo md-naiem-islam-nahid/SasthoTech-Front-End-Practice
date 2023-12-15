@@ -31,7 +31,7 @@ const AllTasks = () => {
               <td>{task.title}</td>
               <td>{task.note}</td>
               <td>
-                <Button variant="primary" size="sm" onClick={() => handleEdit(task)}>Edit</Button>{' '}
+                <Button variant="primary" size="sm" onClick={() => handleEdit(task)}> Edit </Button>{' '}
                 <Button variant="danger" size="sm" onClick={() => dispatch(deleteTask(task.id))}>Delete</Button>
               </td>
             </tr>

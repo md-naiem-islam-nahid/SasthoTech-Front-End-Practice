@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Card, Container, Form } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { Form, Button, Container, Card } from 'react-bootstrap';
+import { addTask, editTask } from '../services/addReducer';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { addTask } from '../services/addReducer';
 
 const AddTask = () => {
     const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const AddTask = () => {
     const [note, setNote] = useState(taskToEdit ? taskToEdit.note : '');
 
     const formStyle = {
-        width: '50%',
+
         marginTop: '50px',
     };
 
@@ -35,9 +35,11 @@ const AddTask = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+        if (id !== '') {
+            dispatch(editTask({ id, title, note }));
+        } else {
             dispatch(addTask({ title, note }));
-        
+        }
         setTitle('');
         setNote('');
         navigate('/all-tasks');

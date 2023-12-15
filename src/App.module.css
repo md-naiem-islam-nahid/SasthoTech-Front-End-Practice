@@ -1,0 +1,19 @@
+/* App.module.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.card {
+  width: 400px; 
+  padding: 20px;
+  height: 500px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* This will give a nice box shadow effect */
+  border-radius: 10px; /* This will give a card-like effect */
+}
